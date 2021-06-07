@@ -1,8 +1,10 @@
 {
+  "name": "codepush-demo",
   "main": "index.js",
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "npx react-native run-android",
+    "ios": "npx pod-install && npx react-native run-ios --simulator='iPhone SE (2nd generation)'",
+    "ios:device":"npx pod-install && npx react-native run-ios --device",
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest"

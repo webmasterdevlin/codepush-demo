@@ -1,0 +1,12 @@
+{
+  "name": "codepush-demo",
+  "displayName": "codepush-demo",
+  "expo": {
+    "name": "codepush-demo",
+    "slug": "codepush-demo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

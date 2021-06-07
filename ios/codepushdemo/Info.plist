@@ -55,5 +55,7 @@
 	<false/>
   <key>UIStatusBarStyle</key>
   <string>UIStatusBarStyleDefault</string>
+  <key>CodePushDeploymentKey</key>
+  <string>UZZ1Z19pBnLeNsRKWA5SYpG1vLfvDAxKOhTJ7</string>
 </dict>
 </plist>

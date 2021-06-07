@@ -1,5 +1,5 @@
 {
-  "name": "codepush-demo",
+  "name": "codepushdemo",
   "main": "index.js",
   "scripts": {
     "android": "npx react-native run-android",

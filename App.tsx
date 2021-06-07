@@ -6,7 +6,12 @@ import codePush from "react-native-code-push";
 const App = codePush(() => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <View>
+        <Text>Open up App.tsx to start working on your app!</Text>
+      </View>
+      <View>
+        <Text>CODE PUSH</Text>
+      </View>
     </View>
   );
 });

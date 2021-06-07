@@ -7,10 +7,12 @@ const App = codePush(() => {
   return (
     <View style={styles.container}>
       <View>
-        <Text>Open up App.tsx to start working on your app!</Text>
+        <Text style={{ color: "#000" }}>
+          Open up App.tsx to start working on your app!
+        </Text>
       </View>
       <View>
-        <Text>CODE PUSH</Text>
+        <Text style={{ color: "#000" }}>CODE PUSH</Text>
       </View>
     </View>
   );

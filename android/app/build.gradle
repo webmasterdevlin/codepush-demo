@@ -121,7 +121,7 @@ def jscFlavor = 'org.webkit:android-jsc:+'
  * on project.ext.react, JavaScript will not be compiled to Hermes Bytecode
  * and the benefits of using Hermes will therefore be sharply reduced.
  */
-def enableHermes = project.ext.react.get("enableHermes", false);
+def enableHermes = project.ext.react.get("enableHermes", true);
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -151,6 +151,12 @@ android {
             storeFile file('debug.keystore')
             storePassword 'android'
             keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        release {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androidreleasekey'
             keyPassword 'android'
         }
     }
@@ -217,3 +223,4 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
